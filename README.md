@@ -229,3 +229,11 @@ npm run lint
 ## Using Playwright for Testing
 
 To use Playwright for testing in your project, see the presubmission script for example, and read [writing-tests](https://playwright.dev/docs/writing-tests).
+
+## Quick clean:
+in `package.json`:
+```json
+"scripts": {
+  "clean": "rm -rf node_modules package-lock.json"
+}
+```
