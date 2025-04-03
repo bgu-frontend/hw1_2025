@@ -9,7 +9,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 ## Submission
 1. Submission is in pairs, but starting alone is better for practice.
 2. Coding: 70%, Questions: 30%.
-3. Your submitted git repo should be *private*, please make 'barashd@post.bgu.ac.il', 'Gurevichronen@gmail.com', 'daninost', and 'Gal-Fadlon' as collaborators.
+3. Your submitted git repo should be *private*, please add 'barashd@post.bgu.ac.il', 'Gurevichronen@gmail.com', 'daninost', and 'Gal-Fadlon' to the list of collaborators.
 4. Do not use external libraries that provide the pagination component. If in doubt, contact the course staff.
 5. Deadline: 23.4.25, end of day.
 6. Additionally, solve the [theoretical questions](https://forms.gle/zGDQF3DcPaA6iqCw6).
