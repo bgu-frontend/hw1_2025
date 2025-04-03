@@ -18,14 +18,14 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 9. The ex1 forum is open for questions in Moodle.
 10. Git repository content:
     1. Aim for a minimal repository size that can be cloned and installed: most of the files in github should be code and package dependencies (add package.json, index.html).
-    2. Don't submit (add to git)  node_modules dir, .next project dir, package-lock.json, or json files.
+    2. Don't submit (add to git)  node_modules dir, .next project dir, package-lock.json, or json files. See .gitignore
 11. If a certain case is not described here, you're free to code it as you see fit.
 12. the submission commit will be tagged as "a1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. `git tag -a submission_hw1 -m "msg"`
     2. `git push origin --tags`
     3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force`.
 13. to test your submission, run the presubmission script (in github). A submission that does not pass the presubmission script, gets a 0 score automatically.
-14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing. See 'Playwright' below.
+14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing.  See 'Playwright' below.
 
 ## AI
 Recommendation about using an AI assistant: You can ask questions and read the answers, but avoid copying them. Understand the details but write the code yourself.
@@ -40,6 +40,7 @@ Requirements for AI usage:
 1. We use a plagiarism detector.
 2. The person who copies and the person who was copied from are both responsible. Set your repository private, and don't share your code.
 3. If the code was copied from an AI agent, we expect it to appear in the shared conversation above.
+4. Exception: You can share tests.
 
 
 ### Github 
