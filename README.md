@@ -25,6 +25,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
     2. `git push origin --tags`
     3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force`.
 13. to test your submission, run the presubmission script (in github). A submission that does not pass the presubmission script, gets a 0 score automatically.
+    1. For example: `bash presubmission.sh git@github.com:bgu-frontend/hw1_2025.git`
 14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing.  See 'Playwright' below.
 
 ## AI
@@ -113,8 +114,7 @@ Use it to initialize a JSON file in, e.g., "./data/notes.json."
     Explanation: We use npm to install packages locally in our project, package.json file tracks those. When you install packages via npm globally, you risk that a package would be installed on your machine but not on others, since it's not tracked by package.json.
 
 ## Code
-1. Won't be tested: aim for short components, there's no hard rule of how many. See [this discussion](https://stackoverflow.com/questions/75380858/how-to-deal-with-a-huge-number-of-components-in-a-page-in-react#:~:text=After%20a%20few%20years%20working,ll%20be%20hard%20to%20read.).
-For example, see Airbnb's [coding style document](https://airbnb.io/javascript/react/).
+1. Aim for short components, with reasonable component directory hierarchy.
 
 
 ### Run the server with an input JSON file:
@@ -151,6 +151,10 @@ npm run dev
         1. if `a <3` : show buttons `[1,2,3,4,5]`
         2. if `3 <= a <= 8` : show buttons `[a-2,a-1,a,a+1,a+2]`
         3. if `a > 8`: show buttons `[6,7,8,9,10]`
+7. Disable irrelevant page buttons:
+    1. `previous` is disabled if we're at the first page.
+    2. `next` is disabled if we're at the last page.
+    3. The current page number: if we're at page number 1, disable page button `1`.
 
 
 ## Checking the coding task:
