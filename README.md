@@ -114,7 +114,7 @@ Use it to initialize a JSON file in, e.g., "./data/notes.json."
     Explanation: We use npm to install packages locally in our project, package.json file tracks those. When you install packages via npm globally, you risk that a package would be installed on your machine but not on others, since it's not tracked by package.json.
 
 ## Code
-1. Aim for short components, with reasonable component directory hierarchy.
+1. Aim for short components, with organized component directory hierarchy. See vite's initial project structure as an example.
 
 
 ### Run the server with an input JSON file:
