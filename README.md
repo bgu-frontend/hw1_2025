@@ -17,12 +17,13 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 8. Use TypeScript, and follow the linter's warnings (see eslint below).
 9. The ex1 forum is open for questions in Moodle.
 10. Git repository content:
-    1. Aim for a minimal repository size that can be cloned and installed:  most of the files in github should be code and package dependencies (package.json).
+    1. Aim for a minimal repository size that can be cloned and installed: most of the files in github should be code and package dependencies (add package.json, index.html).
     2. Don't submit (add to git)  node_modules dir, .next project dir, package-lock.json, or json files.
 11. If a certain case is not described here, you're free to code it as you see fit.
 12. the submission commit will be tagged as "a1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
-    1. git tag -a submission_hw1 -m "msg"
-    2. git push origin --tags
+    1. `git tag -a submission_hw1 -m "msg"`
+    2. `git push origin --tags`
+    3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force`.
 13. to test your submission, run the presubmission script (in github). A submission that does not pass the presubmission script, gets a 0 score automatically.
 14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing. See 'Playwright' below.
 

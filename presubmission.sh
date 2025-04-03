@@ -54,7 +54,7 @@ sleep 1
 # a basic Playwright test
 mkdir "$TEST_DIR"
 cat > "$TEST_DIR/test.spec.js" <<EOF
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('check note and pagination button', async ({ page }) => {
   await page.goto('http://localhost:3000');
@@ -66,15 +66,27 @@ EOF
 
 # Playwright config
 cat > playwright.config.js <<EOF
-module.exports = {
+import { test, expect, defineConfig } from '@playwright/test';
+export default defineConfig({
   testDir: './$TEST_DIR',
   timeout: 10000,
-  retries: 0,
   use: {
     headless: true,
-    baseURL: 'http://localhost:3000'
   },
-};
+});
+EOF
+
+cat > vite.config.ts <<EOF
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 3000,
+  },
+});
 EOF
 
 npx playwright test || {
