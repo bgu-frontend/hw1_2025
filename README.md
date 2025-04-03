@@ -13,7 +13,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 4. Do not use external libraries that provide the pagination component. If in doubt, contact the course staff.
 5. Deadline: 23.4.25, end of day.
 6. Additionally, solve the [theoretical questions](https://forms.gle/zGDQF3DcPaA6iqCw6).
-7. Fill in repository details in (Moodle's "הגשה מטלה 1").
+7. Fill in repository ssh clone link in the course Moodle's git submission area. 
 8. Use TypeScript, and follow the linter's warnings (see eslint below).
 9. The ex1 forum is open for questions in Moodle.
 10. Git repository content:
