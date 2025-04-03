@@ -23,7 +23,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 12. the submission commit will be tagged as "submission_hw1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. `git tag -a submission_hw1 -m "msg"`
     2. `git push origin --tags`
-    3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force`.
+    3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force` to the previous commands.
 13. to test your submission, run the presubmission script (in github). A submission that does not pass the presubmission script, gets a 0 score automatically.
     1. For example: `bash presubmission.sh git@github.com:bgu-frontend/hw1_2025.git`
 14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing.  See 'Playwright' below.
