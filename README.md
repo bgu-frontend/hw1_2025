@@ -26,7 +26,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
     3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force` to the previous commands.
 13. to test your submission, run the presubmission script (in github). A submission that does not pass the presubmission script, gets a 0 score automatically.
     1. For example: `bash presubmission.sh git@github.com:bgu-frontend/hw1_2025.git`
-14. It is recommended to add test to your code and it usually results in higher grades during the automatic testing.  See 'Playwright' below.
+14. It is recommended to add tests to your code; it will usually result in higher grades during the automatic testing.  See 'Playwright' below.
 
 ## AI
 Recommendation about using an AI assistant: You can ask questions and read the answers, but avoid copying them. Understand the details but write the code yourself.
@@ -135,7 +135,7 @@ npm run dev
 ## Suggested implementation steps:
 1. Show a list of posts (tip: start from a local variable holding the post list.)
 2. Connect to the server: (tip: start by getting all posts.)
-3. Add pagination in the UI (tip: plan the component tree: who is using who?). 
+3. Add pagination in the UI (tip: plan the component tree: who is calling who? this suggests a reach component hierarchy.). 
 4. Optimize: when rendering a page, send only the data needed now instead of the entire database.
 5. Tip: write a test plan. how would you test someone else's project? this suggests implementation priorities.
 
