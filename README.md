@@ -13,14 +13,14 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 4. Do not use external libraries that provide the pagination component. If in doubt, contact the course staff.
 5. Deadline: 23.4.25, end of day.
 6. Additionally, solve the [theoretical questions](https://forms.gle/zGDQF3DcPaA6iqCw6).
-7. Fill in repository ssh clone link in the course Moodle's git submission area. 
+7. In the course Moodle's submission form, please fill the repository `ssh clone link` (see image inside the form).
 8. Use TypeScript, and follow the linter's warnings (see eslint below).
 9. The ex1 forum is open for questions in Moodle.
 10. Git repository content:
     1. Aim for a minimal repository size that can be cloned and installed: most of the files in github should be code and package dependencies (add package.json, index.html).
     2. Don't submit (add to git)  node_modules dir, package-lock.json, or json files. Read about .gitignore and see the example in the repo.
 11. If a certain case is not described here, you're free to code it as you see fit.
-12. the submission commit will be tagged as "a1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+12. the submission commit will be tagged as "submission_hw1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. `git tag -a submission_hw1 -m "msg"`
     2. `git push origin --tags`
     3. if you need to tag a new commit as the solution, first delete `git tag -d submission_hw1` or add `--force`.
@@ -170,7 +170,7 @@ npm run dev
 1. Clone and install your submitted GitHub repository.
     1. `git clone <your_submitted_github_repo>`
     2. `cd <cloned dir>`
-    3.  checkout the submission tag
+    3.  `git checkout submission_hw1`
     4. `npm install` (package.json should exist)
     5. `npm run dev` (configured to default port 3000)
 2. Start the server with a JSON file. It will always contain at least one note.
