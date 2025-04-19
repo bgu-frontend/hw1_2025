@@ -46,7 +46,7 @@ Requirements for AI usage:
 
 
 ### Github 
-HW1 will be submitted via Github. Please open a user with your email address.
+HW1 will be submitted via Github. Please create a user with your email address.
 To securely update files from your machine by SSH authentication:
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys 
 
