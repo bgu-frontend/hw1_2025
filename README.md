@@ -30,6 +30,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 
 ## AI
 Recommendation about using an AI assistant: You can ask questions and read the answers, but avoid copying them. Understand the details but write the code yourself.
+
 Requirements for AI usage:
 1. If you use an AI assistant (e.g., ChatGPT, Claude, etc.), you must share your conversation with the AI:
     - Use the "share" option provided by the AI tool to generate a link to the conversation.
