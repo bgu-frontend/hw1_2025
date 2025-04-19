@@ -29,7 +29,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 14. It is recommended to add tests to your code; it will usually result in higher grades during the automatic testing.  See 'Playwright' below.
 
 ## AI
-Recommendation about using an AI assistant: You can ask questions and read the answers, but avoid copying them. Understand the details but write the code yourself.
+Tip for Using an AI Assistant: You can ask questions and read the answers, but avoid copying them. Understand the details but write the code yourself.
 
 Requirements for AI usage:
 1. If you use an AI assistant (e.g., ChatGPT, Claude, etc.), you must share your conversation with the AI:
@@ -42,7 +42,7 @@ Requirements for AI usage:
 1. We use a plagiarism detector.
 2. The person who copies and the person who was copied from are both responsible. Set your repository private, and don't share your code.
 3. If the code was copied from an AI agent, we expect it to appear in the shared conversation above.
-4. Exception: You can share tests.
+4. Exception: You can share tests with other students.
 
 
 ### Github 
@@ -67,7 +67,7 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking
 4. push
 
 
-### Json server - example code
+### Json server - example code to get notes from the server
 In the following, `active_page` is the currently displayed page, and `POSTS_PER_PAGE` is 10, 'notes_url' is 'http://localhost:3001/notes'.
 ```js
 
@@ -109,13 +109,13 @@ npm install
 npm install json-server@0.17.4
 ```
 4. Create and seed the database
-Recommendation: Create a script that creates a JSON file with the number of posts given by an input N in the same format as 'notes.json.'
-Use it to initialize a JSON file in, e.g., "./data/notes.json."
+Recommendation for database creation: Write a script that generates a JSON file with N (=input) posts in the same format as 'notes.json', and use it to initialize a JSON file in, e.g., "./data/notes.json."
 5. Avoid installing your project's packages globally.
-    Explanation: We use npm to install packages locally in our project, package.json file tracks those. When you install packages via npm globally, you risk that a package would be installed on your machine but not on others, since it's not tracked by package.json.
+
+Explanation: We use npm to install packages locally in our project, package.json file tracks those. When you install packages via npm globally, a package might be installed on your machine but your package.json won't have it, so other machines won't install it and fail to run your code.
 
 ## Code
-1. Aim for short components, with organized component directory hierarchy. See vite's initial project structure as an example.
+Aim for short components, with organized component directory hierarchy. See vite's initial project structure as an example.
 
 
 ### Run the server with an input JSON file:
@@ -136,7 +136,7 @@ npm run dev
 ## Suggested implementation steps:
 1. Show a list of posts (tip: start from a local variable holding the post list.)
 2. Connect to the server: (tip: start by getting all posts.)
-3. Add pagination in the UI (tip: plan the component tree: who is calling who? this suggests a reach component hierarchy.). 
+3. Add pagination in the UI (tip: plan the component tree: who is calling who? this suggests a react component hierarchy.). 
 4. Optimize: when rendering a page, send only the data needed now instead of the entire database.
 5. Tip: write a test plan. how would you test someone else's project? this suggests implementation priorities.
 
