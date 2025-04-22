@@ -78,9 +78,9 @@ In the following, `active_page` is the currently displayed page, and `POSTS_PER_
               _per_page: POSTS_PER_PAGE
             }});
         promise.then(response => { 
-            // fill
+            // fill here
         }).catch(error => { console.log("Encountered an error:" + error)});
-    }, []);
+    }, []); //ignore lint warnings in this line
 ```
 
 See:
