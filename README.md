@@ -18,7 +18,7 @@ We will implement a simple front-end app that shows user notes. The app uses a J
 9. The ex1 forum is open for questions in Moodle.
 10. Git repository content:
     1. Aim for a minimal repository size that can be cloned and installed: most of the files in github should be code and package dependencies (add package.json, index.html).
-    2. Don't submit (add to git)  node_modules dir, package-lock.json, or json files. Read about .gitignore and see the example in the repo.
+    2. Don't submit (add to git)  node_modules dir, package-lock.json, or notes json files. Read about .gitignore and see the example in the repo.
 11. If a certain case is not described here, you're free to code it as you see fit.
 12. the submission commit will be tagged as "submission_hw1": [git tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
     1. `git tag -a submission_hw1 -m "msg"`
