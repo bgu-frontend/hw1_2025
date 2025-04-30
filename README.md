@@ -201,57 +201,7 @@ npm run dev
     <button name="last">Last</button>
 </div>
 ```
-```
-<div class="note" id="123">
-  <p>Note content goes here...</p>
-  
-  <!-- Edit Button -->
-  <button name="edit-123">Edit</button>
 
-  <!-- Delete Button -->
-  <button name="delete-123">Delete</button>
-</div>
-```
-###After Clicking "Edit"
-```
-<div class="note" id="123">
-  <input type="text" name="text_input-123" value="Note content goes here..." />
-
-  <button name="text_input_save-123">Save</button>
-  <button name="text_input_cancel-123">Cancel</button>
-</div>
-```
-
-### "Add new Note" Button and Form
-```
-<!-- Add New Note Button -->
-<button name="add_new_note">Add New Note</button>
-
-<!-- After clicking "Add New Note" -->
-<input type="text" name="text_input_new_note" placeholder="Enter your note here..." />
-
-<button name="text_input_save_new_note">Save</button>
-<button name="text_input_cancel_new_note">Cancel</button>
-```
-
-### Theme Toggle Button
-```
-<button name="change_theme">Toggle Theme</button>
-```
-
-### Pagination Controls
-``` 
-<!-- Pagination Navigation -->
-<button name="first">First</button>
-<button name="previous">Previous</button>
-<button name="next">Next</button>
-<button name="last">Last</button>
-
-<!-- Page Number Buttons -->
-<button name="page-1">1</button>
-<button name="page-2">2</button>
-<button name="page-3">3</button>
-```
 
 ## Using `.eslintrc.json` 
 
